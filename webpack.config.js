@@ -95,10 +95,12 @@ module.exports = {
   optimization: {
     splitChunks: {
       chunks: "all"
-    }
-    // minimizer: [new OptimizeCssAssetWebpackPlugin(),
-    // new TerserWebpackPlugin()
-    // ]
+    },
+    minimizer: [
+      new OptimizeCssAssetWebpackPlugin()
+      //   ,
+      // new TerserWebpackPlugin()
+    ]
   },
   plugins: [
     new HTMLWebpackPlugin({
