@@ -10,7 +10,8 @@
     "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
     "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --inline --hot --open",
     "lint": "eslint ./src",
-    "lintfix": "eslint ./src --fix"
+    "lintfix": "eslint ./src --fix",
+    "deploy": "gh-pages -d dist"
   },
   "browsersList": ">25%, not dead",
   "author": "Anastasiya Mironova",
@@ -31,6 +32,7 @@
     "eslint-plugin-html": "^6.0.3",
     "eslint-plugin-import": "^2.22.0",
     "file-loader": "^6.1.1",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.4.1",
     "jest": "^26.4.2",
     "mini-css-extract-plugin": "^0.11.0",
