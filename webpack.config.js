@@ -98,14 +98,14 @@ module.exports = {
     },
     minimizer: [
       new OptimizeCssAssetWebpackPlugin()
-      //   ,
-      // new TerserWebpackPlugin()
+      // , new TerserWebpackPlugin()
     ]
   },
   plugins: [
     new HTMLWebpackPlugin({
       chunks: ["main"],
       filename: "index.html",
+      css: ["header.css", "footer.css", "index_body.css"],
       template: "./index.html",
       minify: {
         collapseWhitespace: isProd
@@ -113,6 +113,7 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       chunks: ["article"],
+      css: ["header.css", "footer.css", "article_body.css"],
       filename: "road.html",
       template: "./road.html",
       minify: {
@@ -120,6 +121,7 @@ module.exports = {
       }
     }),
     new HTMLWebpackPlugin({
+      css: ["header.css", "footer.css", "menu_article_body.css"],
       chunks: ["menu_article"],
       filename: "menu_article.html",
       template: "./menu_article.html",
