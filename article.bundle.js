@@ -137,7 +137,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	var jsonpArray = window["webpackJsonp"] = window["webpackJsonp"] || [];
 /******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
@@ -178,6 +178,81 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var pictures = ["../assets/img/article_menu_theme.png", "../assets/img/ferma.png"];
+var content = document.getElementById("slider");
+
+for (var i = 0; i < pictures.length; i++) {
+  var div = document.createElement("div");
+  div.className = "slide";
+  content.append(div);
+  var imageItem = document.createElement("img");
+  var numPicture = document.createElement("span");
+  numPicture.innerHTML = String(i);
+  numPicture.style.visibility = "hidden";
+  imageItem.src = pictures[i];
+  div.append(imageItem);
+  div.append(numPicture);
+}
+
+var slides = document.getElementsByClassName("slide");
+var activeNode = 0;
+slides[0].lastElementChild.id = "activeSlide";
+
+function goNext(currentNode) {
+  var activeNode = currentNode;
+
+  if (activeNode === slides.length - 1) {
+    activeNode = 0;
+    slides[activeNode].lastElementChild.id = "activeSlide";
+    slides[slides.length - 1].lastElementChild.id = "";
+  } else {
+    activeNode += 1;
+    slides[activeNode - 1].lastElementChild.id = "";
+    slides[activeNode].lastElementChild.id = "activeSlide";
+  }
+
+  return activeNode;
+}
+
+function goBack(currentNode) {
+  var activeNode = currentNode;
+
+  if (activeNode === 0) {
+    activeNode = slides.length - 1;
+    slides[activeNode].lastElementChild.id = "activeSlide";
+    slides[0].lastElementChild.id = "";
+  } else {
+    activeNode -= 1;
+    slides[activeNode + 1].lastElementChild.id = "";
+    slides[activeNode].lastElementChild.id = "activeSlide";
+  }
+
+  return activeNode;
+}
+
+function showSlides(activeSlide) {
+  for (var _i = 0; _i < slides.length; _i++) {
+    slides[_i].style.display = "none";
+  }
+
+  slides[activeSlide].style.display = "block";
+}
+
+function hundleNext() {
+  activeNode = goNext(activeNode);
+  showSlides(activeNode);
+}
+
+function hundleBack() {
+  activeNode = goBack(activeNode);
+  showSlides(activeNode);
+}
+
+showSlides(0);
+var nextButton = document.getElementById("next");
+nextButton.addEventListener("click", hundleNext);
+var backButton = document.getElementById("back");
+backButton.addEventListener("click", hundleBack);
 
 /***/ }),
 
