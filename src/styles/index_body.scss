@@ -50,6 +50,7 @@ body {
 .content__description_header {
   font-size: 5rem;
   margin-bottom: 4rem;
+  text-align: center;
 }
 .content__description_text {
   font-size: 1.5rem;
@@ -77,4 +78,28 @@ body {
 .content__button:hover {
   border: 3px solid rgb(146, 146, 248);
   color: rgb(146, 146, 248);
+}
+
+@media screen and (max-width: 950px) {
+  .header {
+    height: 30%;
+  }
+  .content__description_header {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .content__button {
+    margin-bottom: 2rem;
+  }
+  .content {
+    height: 60%;
+  }
+  .header__menu {
+    width: 20%;
+  }
+  body {
+    align-items: space-between;
+    justify-content: center;
+  }
 }
