@@ -148,23 +148,23 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([315,0]);
+/******/ 	deferredModules.push([314,0]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 315:
+/***/ 314:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(62);
-module.exports = __webpack_require__(316);
+module.exports = __webpack_require__(315);
 
 
 /***/ }),
 
-/***/ 316:
+/***/ 315:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -173,7 +173,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_header_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49);
 /* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_footer_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_menu_article_body_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(317);
+/* harmony import */ var _styles_menu_article_body_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(316);
 /* harmony import */ var _styles_menu_article_body_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_menu_article_body_scss__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -181,7 +181,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 317:
+/***/ 316:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
