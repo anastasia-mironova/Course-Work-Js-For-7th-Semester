@@ -159,26 +159,45 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(62);
-module.exports = __webpack_require__(313);
+module.exports = __webpack_require__(317);
 
 
 /***/ }),
 
 /***/ 313:
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ 317:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(48);
-/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_header_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49);
-/* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_footer_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_article_body_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(314);
-/* harmony import */ var _styles_article_body_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_article_body_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+// EXTERNAL MODULE: ./styles/header.scss
+var header = __webpack_require__(48);
+
+// EXTERNAL MODULE: ./styles/footer.scss
+var footer = __webpack_require__(49);
+
+// EXTERNAL MODULE: ./styles/article_body.scss
+var article_body = __webpack_require__(313);
+
+// CONCATENATED MODULE: ./assets/img/article_menu_theme.png
+/* harmony default export */ var article_menu_theme = (__webpack_require__.p + "c824624685fa0891b023bd0811cdecc4.png");
+// CONCATENATED MODULE: ./assets/img/ferma.png
+/* harmony default export */ var ferma = (__webpack_require__.p + "fb044d9a6e61a7c3bb2d55c03c221996.png");
+// CONCATENATED MODULE: ./article.js
 
 
 
-var pictures = ["../assets/img/article_menu_theme.png", "../assets/img/ferma.png"];
+
+
+var pictures = [article_menu_theme, ferma];
 var content = document.getElementById("slider");
 
 for (var i = 0; i < pictures.length; i++) {
@@ -253,13 +272,6 @@ var nextButton = document.getElementById("next");
 nextButton.addEventListener("click", hundleNext);
 var backButton = document.getElementById("back");
 backButton.addEventListener("click", hundleBack);
-
-/***/ }),
-
-/***/ 314:
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 

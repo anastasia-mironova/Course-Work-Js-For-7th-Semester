@@ -1,11 +1,10 @@
 import "./styles/header.scss";
 import "./styles/footer.scss";
 import "./styles/article_body.scss";
+import article_menu_theme from "./assets/img/article_menu_theme.png";
+import ferma from "./assets/img/ferma.png";
 
-let pictures = [
-  "../assets/img/article_menu_theme.png",
-  "../assets/img/ferma.png",
-];
+let pictures = [article_menu_theme, ferma];
 
 let content = document.getElementById("slider");
 for (let i = 0; i < pictures.length; i++) {
