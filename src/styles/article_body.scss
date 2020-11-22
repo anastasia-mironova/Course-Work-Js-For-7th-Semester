@@ -110,8 +110,8 @@ button:focus {
 }
 
 .slide {
-  height: 17rem;
-  width: 27rem;
+  height: 100%;
+  width: 100%;
   animation: fade 1.5s ease-in-out;
   overflow: hidden;
   position: absolute;
@@ -119,8 +119,8 @@ button:focus {
 
 .slider-container {
   position: relative;
-  height: 17rem;
-  width: 27rem;
+  height: 15rem;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   top: 0px;
@@ -148,17 +148,11 @@ button:focus {
     transform: scale(1);
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1081px) {
   .content__paragraph {
-    display: block;
-    color: $main-font-color;
-    background-color: rgba(0, 0, 0, 0.408);
     padding: 15px;
     width: 90%;
     margin: 20px auto;
-    white-space: normal;
-    line-height: 25px;
-    font-size: 20px;
   }
   .content__menu-article-theme {
     height: 30rem;
