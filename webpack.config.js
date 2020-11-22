@@ -129,6 +129,51 @@ module.exports = {
         collapseWhitespace: isProd
       }
     }),
+    new HTMLWebpackPlugin({
+      chunks: ["article"],
+      css: ["header.css", "footer.css", "article_body.css"],
+      filename: "doingInIceland.html",
+      template: "./doingInIceland.html",
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+    new HTMLWebpackPlugin({
+      chunks: ["article"],
+      css: ["header.css", "footer.css", "article_body.css"],
+      filename: "ferma.html",
+      template: "./ferma.html",
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+    new HTMLWebpackPlugin({
+      chunks: ["article"],
+      css: ["header.css", "footer.css", "article_body.css"],
+      filename: "shine.html",
+      template: "./shine.html",
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+    new HTMLWebpackPlugin({
+      chunks: ["article"],
+      css: ["header.css", "footer.css", "article_body.css"],
+      filename: "transport.html",
+      template: "./transport.html",
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+    new HTMLWebpackPlugin({
+      chunks: ["article"],
+      css: ["header.css", "footer.css", "article_body.css"],
+      filename: "iceberg.html",
+      template: "./iceberg.html",
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].bundle.css"
     }),

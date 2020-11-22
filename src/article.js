@@ -1,6 +1,6 @@
 import "./styles/header.scss";
 import "./styles/footer.scss";
-import "./styles/road_body.scss";
+import "./styles/article_body.scss";
 
 let pictures = [
   "../assets/img/article_menu_theme.png",
