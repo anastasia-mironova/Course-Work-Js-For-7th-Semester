@@ -55,8 +55,10 @@ body {
   height: 100%;
 }
 .article-grid_item-background {
-  width: 440px;
-  height: 245px;
+  // width: 440px;
+  // height: 245px;
+  width: 25rem;
+  height: 17rem;
   background-color: $main-font-color;
   border-radius: 5px;
 }
@@ -72,8 +74,10 @@ body {
 }
 
 .article-grid_item-image {
-  width: 365px;
-  height: 210px;
+  // width: 365px;
+  // height: 210px;
+  width: 20rem;
+  height: 15rem;
   border-radius: 5px;
   position: absolute;
   top: -25px;
@@ -124,5 +128,14 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content__menu-article-theme {
+    height: 30rem;
+  }
+
+  .content__menu-article_header {
+    font-size: 3rem;
   }
 }
