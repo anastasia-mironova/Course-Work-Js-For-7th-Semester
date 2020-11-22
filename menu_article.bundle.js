@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"menu_article": 0
+/******/ 		3: 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,27 +148,32 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([2,"vendors~article~main~menu_article"]);
+/******/ 	deferredModules.push([315,0]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./menu_article.js":
-/*!*************************!*\
-  !*** ./menu_article.js ***!
-  \*************************/
-/*! no exports provided */
+/***/ 315:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(62);
+module.exports = __webpack_require__(316);
+
+
+/***/ }),
+
+/***/ 316:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/header.scss */ "./styles/header.scss");
+/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(48);
 /* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_header_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/footer.scss */ "./styles/footer.scss");
+/* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49);
 /* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_footer_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_menu_article_body_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/menu_article_body.scss */ "./styles/menu_article_body.scss");
+/* harmony import */ var _styles_menu_article_body_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(317);
 /* harmony import */ var _styles_menu_article_body_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_menu_article_body_scss__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -176,57 +181,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./styles/footer.scss":
-/*!****************************!*\
-  !*** ./styles/footer.scss ***!
-  \****************************/
-/*! no static exports found */
+/***/ 317:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-    if(false) { var cssReload; }
-  
 
 /***/ }),
 
-/***/ "./styles/header.scss":
-/*!****************************!*\
-  !*** ./styles/header.scss ***!
-  \****************************/
-/*! no static exports found */
+/***/ 48:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-    if(false) { var cssReload; }
-  
 
 /***/ }),
 
-/***/ "./styles/menu_article_body.scss":
-/*!***************************************!*\
-  !*** ./styles/menu_article_body.scss ***!
-  \***************************************/
-/*! no static exports found */
+/***/ 49:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-    if(false) { var cssReload; }
-  
-
-/***/ }),
-
-/***/ 2:
-/*!***********************************************!*\
-  !*** multi @babel/polyfill ./menu_article.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! @babel/polyfill */"../node_modules/@babel/polyfill/lib/index.js");
-module.exports = __webpack_require__(/*! ./menu_article.js */"./menu_article.js");
-
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=menu_article.bundle.js.map
