@@ -44,7 +44,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 .header__menu-link,
@@ -195,7 +195,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 .header__menu-link,
