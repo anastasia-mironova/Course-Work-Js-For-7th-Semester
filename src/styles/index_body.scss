@@ -52,6 +52,7 @@ body {
   text-align: center;
 }
 .content__description_text {
+  text-align: center;
   font-size: 1.5rem;
   color: rgba(255, 241, 241, 0.53);
 }
@@ -95,6 +96,10 @@ body {
   .content {
     height: 60%;
   }
+  .content__description_text {
+  
+  font-size: 1rem;
+}
   .header__menu {
     width: 20%;
   }
