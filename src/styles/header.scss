@@ -39,16 +39,9 @@ $main-font-color: #fff1f1;
 
 .header__menu-item:hover {
   background-color: rgba(184, 190, 216, 0.246);
-  animation: ScaleAnimation 2s ease-in-out;
+ 
 }
-@keyframes ScaleAnimation {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.2);
-  }
-}
+
 
 .header__menu-link,
 .link {

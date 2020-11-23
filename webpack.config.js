@@ -85,7 +85,8 @@ module.exports = {
   entry: {
     main: ["@babel/polyfill", "./index.js"],
     article: ["@babel/polyfill", "./article.js"],
-    menu_article: ["@babel/polyfill", "./menu_article.js"]
+    menu_article: ["@babel/polyfill", "./menu_article.js"],
+    organization: ["@babel/polyfill", "./organization.js"]
   },
   output: {
     filename: "[name].bundle.js",
@@ -170,6 +171,15 @@ module.exports = {
       css: ["header.css", "footer.css", "article_body.css"],
       filename: "iceberg.html",
       template: "./iceberg.html",
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+     new HTMLWebpackPlugin({
+      chunks: ["organization"],
+      css: ["header.css", "footer.css", "organization_body.css"],
+      filename: "organization.html",
+      template: "./organization.html",
       minify: {
         collapseWhitespace: isProd
       }
