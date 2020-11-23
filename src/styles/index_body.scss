@@ -34,7 +34,6 @@ body {
 }
 
 .content {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -73,7 +72,7 @@ body {
   padding: 20px;
   border: 3px solid $main-font-color;
   border-radius: 5px;
-  margin-bottom: 8rem;
+  margin: 8rem 0;
 }
 .content__button:hover {
   border: 3px solid rgb(146, 146, 248);
@@ -85,12 +84,12 @@ body {
     height: 30%;
   }
   .content__description_header {
-    font-size: 5rem;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    margin: 4rem 0;
     text-align: center;
   }
   .content__button {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     padding: 0.5rem;
   }
   .content {
