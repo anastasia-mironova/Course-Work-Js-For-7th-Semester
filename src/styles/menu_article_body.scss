@@ -4,6 +4,12 @@
   src: url("../assets/fonts/amatic.ttf");
   /* Путь к файлу со шрифтом */
 }
+@font-face {
+  font-family: Futura;
+  /* Имя шрифта */
+  src: url("../assets/fonts/FuturaBookC.ttf");
+  /* Путь к файлу со шрифтом */
+}
 @mixin text-shadow-param {
   text-shadow: 0px 7px 6px rgba(0, 0, 0, 0.4);
 }
@@ -20,6 +26,7 @@ body {
   margin: 0;
   background-color: #0e0a7a;
   color: $main-font-color;
+  font-family: Futura;
 }
 .content {
   width: 100%;
@@ -66,7 +73,6 @@ body {
   display: flex;
   flex-direction: column;
   color: black;
-  font-family: "Amatic";
 }
 .content_article-grid_item {
   position: relative;
@@ -88,7 +94,7 @@ body {
 }
 
 .article-grid_item-header {
-  font-size: 18px;
+  font-size: 14px;
   position: absolute;
   bottom: 1%;
   margin-left: 7%;
@@ -122,6 +128,10 @@ body {
 }
 .norten-shine {
   background-image: url("../assets/img/norten_shine.png");
+}
+
+.content__article-grid {
+  background-color: rgba(0, 0, 0, 0.408);
 }
 @media screen and (max-width: 1081px) {
   .content__article-grid-row {

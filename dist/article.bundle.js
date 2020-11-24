@@ -155,11 +155,25 @@
 /************************************************************************/
 /******/ ({
 
+/***/ 26:
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ 27:
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ 312:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(50);
-module.exports = __webpack_require__(320);
+__webpack_require__(46);
+module.exports = __webpack_require__(323);
 
 
 /***/ }),
@@ -171,7 +185,7 @@ module.exports = __webpack_require__(320);
 
 /***/ }),
 
-/***/ 320:
+/***/ 323:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -179,10 +193,10 @@ module.exports = __webpack_require__(320);
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./styles/header.scss
-var header = __webpack_require__(38);
+var header = __webpack_require__(26);
 
 // EXTERNAL MODULE: ./styles/footer.scss
-var footer = __webpack_require__(39);
+var footer = __webpack_require__(27);
 
 // EXTERNAL MODULE: ./styles/article_body.scss
 var article_body = __webpack_require__(313);
@@ -272,20 +286,6 @@ var nextButton = document.getElementById("next");
 nextButton.addEventListener("click", hundleNext);
 var backButton = document.getElementById("back");
 backButton.addEventListener("click", hundleBack);
-
-/***/ }),
-
-/***/ 38:
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ 39:
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ })
 

@@ -4,14 +4,16 @@
   src: url("../assets/fonts/OpenSansCondensed-Bold.ttf");
   /* Путь к файлу со шрифтом */
 }
+@font-face {
+  font-family: Futura;
+  /* Имя шрифта */
+  src: url("../assets/fonts/FuturaBookC.ttf");
+  /* Путь к файлу со шрифтом */
+}
 @mixin text-shadow-param {
   text-shadow: 0px 7px 6px rgba(0, 0, 0, 0.4);
 }
 $main-font-color: #fff1f1;
-
-P {
-  font-family: Open Sans;
-}
 
 html {
   width: 100%;
@@ -26,7 +28,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: $main-font-color;
-  font-family: Open Sans Condensed;
+  font-family: Futura;
   @include text-shadow-param;
   display: flex;
   flex-direction: column;
@@ -97,9 +99,8 @@ body {
     height: 60%;
   }
   .content__description_text {
-  
-  font-size: 1rem;
-}
+    font-size: 1rem;
+  }
   .header__menu {
     width: 20%;
   }
@@ -107,10 +108,10 @@ body {
     align-items: space-between;
     justify-content: center;
   }
-  .content__description{
+  .content__description {
     align-items: center;
   }
   .content__button {
-  font-size: 1.1rem;
-}
+    font-size: 1.1rem;
+  }
 }

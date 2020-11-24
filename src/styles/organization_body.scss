@@ -7,7 +7,12 @@ $main-font-color: #fff1f1;
 //     flex-direction:column;
 //     justify-content: space-between;
 // }
-
+@font-face {
+  font-family: Futura;
+  /* Имя шрифта */
+  src: url("../assets/fonts/FuturaBookC.ttf");
+  /* Путь к файлу со шрифтом */
+}
 html {
   width: 100%;
   //   height: 100%;
@@ -18,6 +23,7 @@ body {
   margin: 0;
   background-color: #0e0a7a;
   color: $main-font-color;
+  font-family: Futura;
 }
 .content {
   width: 100%;
@@ -60,4 +66,13 @@ body {
   align-self: flex-end;
 }
 @media screen and (max-width: 1081px) {
+  .title-page {
+    font-size: 1rem;
+  }
+  .content__body {
+    width: 80%;
+    padding: 10;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

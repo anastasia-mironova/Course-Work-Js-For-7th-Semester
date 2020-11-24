@@ -86,7 +86,8 @@ module.exports = {
     main: ["@babel/polyfill", "./index.js"],
     article: ["@babel/polyfill", "./article.js"],
     menu_article: ["@babel/polyfill", "./menu_article.js"],
-    organization: ["@babel/polyfill", "./organization.js"]
+    organization: ["@babel/polyfill", "./organization.js"],
+    contacts: ["@babel/polyfill", "./contacts.js"]
   },
   output: {
     filename: "[name].bundle.js",
@@ -175,11 +176,20 @@ module.exports = {
         collapseWhitespace: isProd
       }
     }),
-     new HTMLWebpackPlugin({
+    new HTMLWebpackPlugin({
       chunks: ["organization"],
       css: ["header.css", "footer.css", "organization_body.css"],
       filename: "organization.html",
       template: "./organization.html",
+      minify: {
+        collapseWhitespace: isProd
+      }
+    }),
+    new HTMLWebpackPlugin({
+      chunks: ["contacts"],
+      css: ["header.css", "footer.css", "contacts_body.css"],
+      filename: "contacts.html",
+      template: "./contacts.html",
       minify: {
         collapseWhitespace: isProd
       }
