@@ -1,10 +1,12 @@
 import "./styles/header.scss";
 import "./styles/footer.scss";
 import "./styles/article_body.scss";
-import article_menu_theme from "./assets/img/article_menu_theme.png";
-import ferma from "./assets/img/ferma.png";
-
-let pictures = [article_menu_theme, ferma];
+import slide1 from "./assets/img/slide1.png";
+import slide2 from "./assets/img/slide2.jpg";
+import slide3 from "./assets/img/slide3.jpg";
+import slide4 from "./assets/img/slide4.jpg";
+import slide5 from "./assets/img/slide5.jpg";
+let pictures = [slide1, slide2, slide3, slide4, slide5];
 
 let content = document.getElementById("slider");
 for (let i = 0; i < pictures.length; i++) {

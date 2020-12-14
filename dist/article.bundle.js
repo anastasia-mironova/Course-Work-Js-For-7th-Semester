@@ -201,17 +201,26 @@ var footer = __webpack_require__(27);
 // EXTERNAL MODULE: ./styles/article_body.scss
 var article_body = __webpack_require__(313);
 
-// CONCATENATED MODULE: ./assets/img/article_menu_theme.png
-/* harmony default export */ var article_menu_theme = (__webpack_require__.p + "c824624685fa0891b023bd0811cdecc4.png");
-// CONCATENATED MODULE: ./assets/img/ferma.png
-/* harmony default export */ var ferma = (__webpack_require__.p + "fb044d9a6e61a7c3bb2d55c03c221996.png");
+// CONCATENATED MODULE: ./assets/img/slide1.png
+/* harmony default export */ var slide1 = (__webpack_require__.p + "e91ff99de4a972c1a6cb11721ea894d0.png");
+// CONCATENATED MODULE: ./assets/img/slide2.jpg
+/* harmony default export */ var slide2 = (__webpack_require__.p + "01bbc5eecb0564f0edf24932434b4cac.jpg");
+// CONCATENATED MODULE: ./assets/img/slide3.jpg
+/* harmony default export */ var slide3 = (__webpack_require__.p + "d0aa98728ab19e90750b088d418fe68b.jpg");
+// CONCATENATED MODULE: ./assets/img/slide4.jpg
+/* harmony default export */ var slide4 = (__webpack_require__.p + "663b2ba9d5022c0a35c0d161df6a5cdf.jpg");
+// CONCATENATED MODULE: ./assets/img/slide5.jpg
+/* harmony default export */ var slide5 = (__webpack_require__.p + "5f822cd4e00560d30afbd6f2c3284a3c.jpg");
 // CONCATENATED MODULE: ./article.js
 
 
 
 
 
-var pictures = [article_menu_theme, ferma];
+
+
+
+var pictures = [slide1, slide2, slide3, slide4, slide5];
 var content = document.getElementById("slider");
 
 for (var i = 0; i < pictures.length; i++) {
